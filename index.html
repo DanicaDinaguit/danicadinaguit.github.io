@@ -14,70 +14,13 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
     <!-- Custom Styles -->
     <link href="css/style.css" rel="stylesheet" />
-    <style>
-      body {
-        font-family: "Montserrat", sans-serif;
-        padding-top: 70px;
-      }
-      .navbar-brand {
-        font-family: "Arvo", serif;
-        font-size: 1.75rem;
-      }
-      #home {
-        background: linear-gradient(135deg, #ef664d 0%, #f8b500 100%);
-        color: #fff;
-        position: relative;
-      }
-      #home::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.5);
-      }
-      #home .container {
-        position: relative;
-        z-index: 1;
-      }
-      .btn-primary {
-        background-color: #ef664d;
-        border: none;
-      }
-      .btn-primary:hover {
-        background-color: #d4553d;
-      }
-      section {
-        padding: 4rem 0;
-      }
-      .section-title {
-        font-family: "Arvo", serif;
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-      }
-      .service-icon {
-        font-size: 3rem;
-        color: #ef664d;
-      }
-      .card-custom {
-        transition: transform 0.3s, box-shadow 0.3s;
-      }
-      .card-custom:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-      }
-      footer a {
-        color: #ef664d;
-        text-decoration: none;
-        margin: 0 0.5rem;
-      }
-      /* Uniform image sizing */
-      .card-img-top {
-        height: 200px;
-        object-fit: contain;
-        background-color: #f8f9fa;
-      }
-    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -213,16 +156,108 @@
       </div>
     </section>
 
+    <!-- Certifications & Courses -->
+    <section id="certifications" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title text-center mb-4">Certifications & Courses</h2>
+        <div class="row g-3 justify-content-center">
+          <!-- Certification Card -->
+          <div class="col-auto">
+            <div class="card border-primary shadow-sm" style="width: 14rem">
+              <div class="card-body text-center">
+                <i class="bi bi-patch-check-fill text-primary fs-1 mb-2"></i>
+                <h6 class="card-title">FreeCodeCamp</h6>
+                <p class="card-text small">
+                  Web Design, JavaScript, Front End & Back End
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="card border-primary shadow-sm" style="width: 14rem">
+              <div class="card-body text-center">
+                <i class="bi bi-patch-check-fill text-primary fs-1 mb-2"></i>
+                <h6 class="card-title">Simplilearn</h6>
+                <p class="card-text small">Web Development Course</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="card border-primary shadow-sm" style="width: 14rem">
+              <div class="card-body text-center">
+                <i class="bi bi-patch-check-fill text-primary fs-1 mb-2"></i>
+                <h6 class="card-title">SEO 101 Seminar</h6>
+                <p class="card-text small">On-Page SEO Fundamentals</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="card border-primary shadow-sm" style="width: 14rem">
+              <div class="card-body text-center">
+                <i class="bi bi-patch-check-fill text-primary fs-1 mb-2"></i>
+                <h6 class="card-title">TESDA NC II</h6>
+                <p class="card-text small">Contact Center Services</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Honors & Awards -->
+    <section id="honors" class="py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Honors & Awards</h2>
+        <div class="row g-4 justify-content-center">
+          <!-- Magna Cum Laude -->
+          <div class="col-md-4 text-center">
+            <div class="card">
+              <div class="icon-circle">
+                <i class="bi bi-award-fill"></i>
+              </div>
+              <h5 class="card-title">Magna Cum Laude</h5>
+              <p class="card-text text-muted">Asian College 2025</p>
+            </div>
+          </div>
+          <!-- IT Specialist Award -->
+          <div class="col-md-4 text-center">
+            <div class="card">
+              <div class="icon-circle">
+                <i class="bi bi-award-fill"></i>
+              </div>
+              <h5 class="card-title">IT Specialist Award</h5>
+              <p class="card-text text-muted">Graduation Honors</p>
+            </div>
+          </div>
+          <!-- Consistent Honor Student -->
+          <div class="col-md-4 text-center">
+            <div class="card">
+              <div class="icon-circle">
+                <i class="bi bi-award-fill"></i>
+              </div>
+              <h5 class="card-title">Honor Student</h5>
+              <p class="card-text text-muted">Consistent</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Work Section -->
     <section id="work" class="works-section py-5">
       <div class="container">
         <!-- Section Header -->
         <div class="works-header text-center mb-5">
           <h3>Works & Projects</h3>
-          <p style="color: black">A showcase of my academic and professional projects</p>
+          <p style="color: black">
+            A showcase of my academic and professional projects
+          </p>
         </div>
         <p class="text-center text-muted fst-italic mb-4">
-          <small>Note: I handled all development/programming for these projects—UI/UX design by specialized designers.</small>
+          <small
+            >Note: I handled all development/programming for these
+            projects—UI/UX design by specialized designers.
+          </small>
         </p>
         <!-- Project Cards Grid -->
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
@@ -689,23 +724,55 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
+    <footer class="bg-dark text-white pt-4">
       <div class="container">
-        <p class="mb-1">&copy; 2024 Danica Dinaguit</p>
-        <p>
-          <a href="https://www.facebook.com/denden.dinaguit/"
-            ><i class="icon2"></i
-          ></a>
-          <a href="https://github.com/DanicaDinaguit"
-            ><i class="bi bi-github ms-3"></i
-          ></a>
-          <a href="#"><i class="bi bi-envelope ms-3"></i></a>
-        </p>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#home" class="text-white text-decoration-none">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="text-white text-decoration-none"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#work" class="text-white text-decoration-none"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="#services" class="text-white text-decoration-none"
+                  >Services</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <h5>Connect with me</h5>
+            <a
+              href="https://www.facebook.com/denden.dinaguit/"
+              target="_blank"
+              class="text-white fs-4 me-3"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a
+              href="https://github.com/DanicaDinaguit"
+              target="_blank"
+              class="text-white fs-4 me-3"
+              ><i class="bi bi-github"></i
+            ></a>
+            <a href="mailto:dinaguit.danica@gmail.com" class="text-white fs-4"
+              ><i class="bi bi-envelope"></i
+            ></a>
+          </div>
+        </div>
+        <div class="text-center mt-3 mb-2">&copy; 2024 Danica Dinaguit</div>
       </div>
     </footer>
 
-    <!-- Bootstrap & Icons -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.js"></script>
   </body>
 </html>
