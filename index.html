@@ -1,525 +1,709 @@
-<!--Author: Template Stock
-Author URL: http://templatestock.co
--->
 <!DOCTYPE html>
-<html>
-<head>
-<title>Danica E. Dinaguit</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Onepage Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	    
-	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
- <script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
-			});
-		});
-	</script>
-</head>
-<body>
-<div class="header" id="head">	
-      <div class="container"> 
-         <div class="header-top">
-      		 <div class="logo">
-				<a href="index.html"><img src="" alt=""/></a>
-			 </div>
-		   <div class="top-menu">
-		   	<span class="menu"> </span>
-			<ul>
-			 	<nav class="cl-effect-5">
-				<li><a class="active" href="index.html"><span data-hover="Home">home</span></a></li>
-				<li><a href="#about" class="scroll"><span data-hover="about">about</span></a></li>
-				<li><a href="#work" class="scroll"><span data-hover="work"><span>work</span></a></li>
-				<li><a href="#services" class="scroll"><span data-hover="services">services</span></a></li>
-				<li><a href="#contact" class="scroll"><span data-hover="contact">contact</span></a></li>
-				</nav>
-			 </ul>
-			 </div>
-			 <!--script-nav-->
-		 <script>
-		 $("span.menu").click(function(){
-		 $(".top-menu ul").slideToggle("slow" , function(){
-		 });
-		 });
-		 </script>
-			<div class="clearfix"></div>
-		 </div>  
-		  <div class="index-banner">
-       	   <div class="wmuSlider example1">
-			   <div class="wmuSliderWrapper">
-				   <article style="position: absolute; width: 100%; opacity: 0;"> 
-				   	<div class="banner-wrap">
-				   	       	<div class="banner_center">
-				   		 		<h1>hello world,</h1> 
-				   		 		<h2>i am <span>web developer</span></h2>
-				   		 		<h2>from the philippines</h2>
-				   		 		</div>
-				   		 </div>
-					</article>
-				   <article style="position: relative; width: 100%; opacity: 1;"> 
-				   	   	<div class="banner-wrap">
-				   	    	<div class="banner_center">
-				   		 		<h1>What I Do?</h1> 
-				   		 		<h2>I <span>create websites from client requests</span></h2>
-				   		 		<h2>I also have skills related to MS word, excel, javascript, html, python, php, laravel</h2>
-				   			</div>
-				   		</div>
-				   </article>
-				   <article style="position: absolute; width: 100%; opacity: 0;">
-				   	  	<div class="banner-wrap">
-				   	       <div class="banner_center">
-				   		 		<h1>Contact Me for project inquiries ,</h1> 
-				   		 		<h2>Visit my github profile <span>to know how to contact me</span></h2>
-				   		 		<h2><a href="https://github.com/DanicaDinaguit">Here's a link</a></h2>
-				   		 		</div>
-				   		 </div>
-					 </article>
-				 </div>
-				
-            </div>
-            <script src="js/jquery.wmuSlider.js"></script> 
-			  <script>
-       			$('.example1').wmuSlider();         
-   		     </script> 	           	      
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Danica E. Dinaguit</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Arvo:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom Styles -->
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        padding-top: 70px;
+      }
+      .navbar-brand {
+        font-family: "Arvo", serif;
+        font-size: 1.75rem;
+      }
+      #home {
+        background: linear-gradient(135deg, #ef664d 0%, #f8b500 100%);
+        color: #fff;
+        position: relative;
+      }
+      #home::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      #home .container {
+        position: relative;
+        z-index: 1;
+      }
+      .btn-primary {
+        background-color: #ef664d;
+        border: none;
+      }
+      .btn-primary:hover {
+        background-color: #d4553d;
+      }
+      section {
+        padding: 4rem 0;
+      }
+      .section-title {
+        font-family: "Arvo", serif;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+      .service-icon {
+        font-size: 3rem;
+        color: #ef664d;
+      }
+      .card-custom {
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .card-custom:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+      footer a {
+        color: #ef664d;
+        text-decoration: none;
+        margin: 0 0.5rem;
+      }
+      /* Uniform image sizing */
+      .card-img-top {
+        height: 200px;
+        object-fit: contain;
+        background-color: #f8f9fa;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark py-3">
+      <div class="container">
+        <a class="navbar-brand" href="#home">Danica Dinaguit</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+          </ul>
+        </div>
       </div>
-	 </div>     
-	</div>
-	<div class="content">
-		<div class="about-section" id="about" id="about">
-	<div class="container">
-		<div class="about-header">
-			<h3>about danica e. dinaguit</h3>
-			<div class="about-imag">
-			<img width="206" height="206" src="images/me.jpg" alt=""/>
-			</div>
-			<div class="about-text">
-				<p>Hi! My name's Danica E. Dinaguit. I'm a 23 year old web developer. Currently, I am expanding my field of expertise and also improving my web development skills. </p> <br>
-				<p>I have works currently added below for your perusal. Never hesitate to contact me if you want some projects done, I'll be very glad to entertain you.</p>
-			</div>
-			<div class="clearfix"></div>
-			</div>
-			<div class="about-sectiongrids">
-				<div class="col-md-6 about-leftgrid">
-					<div class="polls">
-					<div class="poll">
-						<div class="poll-desc">
-							<h4>Graphic Design</h4>
-						</div>
-						<div class="percentage">
-							<p>25%</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="skills">
-			              	<div style="width:25%"> </div>
-	                      </div>
-	                      </div>
-	                      <div class="polls">
-					<div class="poll">
-						<div class="poll-desc">
-							<h4>Ui/Ux</h4>
-						</div>
-						<div class="percentage">
-							<p>75%</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="skills">
-			              	<div style="width:75%"> </div>
-	                      </div>
-	                      </div>
-	                      <div class="polls">
-					<div class="poll">
-						<div class="poll-desc">
-							<h4>Logo Design</h4>
-						</div>
-						<div class="percentage">
-							<p>25%</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="skills">
-			              	<div style="width:25%"> </div>
-	                      </div>
-	                      </div>
-	                      <div class="polls">
-					<div class="poll">
-						<div class="poll-desc">
-							<h4>Html/Css</h4>
-						</div>
-						<div class="percentage">
-							<p>75%</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="skills">
-			              	<div style="width:75%"> </div>
-	                      </div>
-	                      </div>
+    </nav>
 
-	</div>
-	<div class="col-md-6 about-rightgrid">
-		<div class="polls">
-					<div class="poll">
-						<div class="poll-desc">
-							<h4>web design</h4>
-						</div>
-						<div class="percentage">
-							<p>50%</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="skills">
-			              	<div style="width:50%"> </div>
-	                      </div>
-	                      </div>
-	                      <div class="polls">
-					<div class="poll">
-						<div class="poll-desc">
-							<h4>Web Development</h4>
-						</div>
-						<div class="percentage">
-							<p>90%</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="skills">
-			              	<div style="width:90%"> </div>
-	                      </div>
-	                      </div>
-	                      <div class="polls">
-					<div class="poll">
-						<div class="poll-desc">
-							<h4>Javascript</h4>
-						</div>
-						<div class="percentage">
-							<p>50%</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="skills">
-			              	<div style="width:50%"> </div>
-	                      </div>
-				<div class="polls">
-					<div class="poll">
-						<div class="poll-desc">
-							<h4>PHP LARAVEL</h4>
-						</div>
-						<div class="percentage">
-							<p>75%</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="skills">
-			              	<div style="width:75%"> </div>
-	                      </div>
-	                      </div>
-	                      <div class="polls">
-					<div class="poll">
-						<div class="poll-desc">
-							<h4>Jquery</h4>
-						</div>
-						<div class="percentage">
-							<p>50%</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="skills">
-			              	<div style="width:50%"> </div>
-	                      </div>
-	                      </div>
-		</div>
-		<div class="clearfix"></div>
-	</div>
-	<div class="arrow1">
-	<a href="#work" class="scroll"><img src="images/arrow1.png" alt=""/></a>
-					</div>
-	</div>
-	</div>
-	<!-- about-section-ends -->
-	<div class="works-section" id="work" id="work">
-	   <div class="works-header">
-			<h3>works</h3>
-				<p>These are my current works up to this date, my websites and figma designs are also included.
-					There's also my works from Scrimba like passenger counter, blackjack and some other's as well.
-				</p>
-		</div>
-		<div class="portfolio-section-bottom-row" id="portfolio">
-			<div class="container">
-				
-						<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
-					<script type="text/javascript">
-						$(document).ready(function () {
-							$('#horizontalTab').easyResponsiveTabs({
-								type: 'default', //Types: default, vertical, accordion           
-								width: 'auto', //auto or any width like 600px
-								fit: true   // 100% fit in a container
-							});
-						});
-						
-					</script>
-						<link rel="stylesheet" href="css/swipebox.css">
-							<script src="js/jquery.swipebox.min.js"></script> 
-								<script type="text/javascript">
-									jQuery(function($) {
-										$(".swipebox").swipebox();
-									});
-								</script>
-							<!-- Portfolio Ends Here -->
-						<div class="sap_tabs">
-							<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
-								  <ul class="resp-tabs-list">
-									  <li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>All</span></li>
-									  <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Web Development</span></li>
-									  <!-- <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>Figma Web design</span></li> -->
-									  
-									  <div class="clearfix"></div>
-								  </ul>	
-								<div id="portfoliolist">
-									<div class="resp-tabs-container">
-										<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
-											<div class="tab_img">
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/kofinos-web.PNG" class="swipebox"  title="Kofinos Website">
-															<img height="400" src="images/kofinos-web.PNG" class="img-responsive" alt="">
-															<span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/kofinos-qrmenu-dashboard.PNG" class="swipebox"  title="Kofinos Qr Menu Dashboard">
-															  <img src="images/kofinos-qrmenu-dashboard.PNG" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/passenger-counter.png" class="swipebox"  title="Passenger Counter">
-															  <img src="images/passenger-counter.png" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/blackjack.png" class="swipebox"  title="Blackjack">
-															<img src="images/blackjack.png" class="img-responsive" alt="">
-															<span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/chrome-extensions.png" class="swipebox"  title="Chrome Extension">
-															<img src="images/chrome-extensions.png" class="img-responsive" alt="">
-															<span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/basketball-scoreboard.png class=" class="swipebox"  title="Basketball Scoreboard">
-															<img src="images/basketball-scoreboard.png" class="img-responsive" alt="">
-															<span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/Dad_joke_Generator.png" class="swipebox"  title="Dad Joke Generator">
-															  <img src="images/Dad_joke_Generator.png" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/Volunteer_Coordination_LandingPage.png" class="swipebox"  title="Volunteer Coordination System">
-															  <img src="images/Volunteer_Coordination_LandingPage.png" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="clearfix"></div>	
-											</div>
-																				 
-										</div>
-										<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
-											<div class="tab_img">
-												<div class="col-md-3 img-top grid_box">
-													<a href="images/Volunteer_Coordination_LandingPage.png" class="swipebox"  title="Volunteer Coordination System">
-														<img src="images/Volunteer_Coordination_LandingPage.png" class="img-responsive" alt="">
-														<span class="zoom-icon"></span> 
-													</a>
-												</div>
-												<div class="col-md-3 img-top grid_box">
-													<a href="images/SOCI_application form.png" class="swipebox"  title="Volunteer Coordination System">
-														<img src="images/SOCI_application_form.png" class="img-responsive" alt="">
-														<span class="zoom-icon"></span> 
-													</a>
-												</div>
-												<div class="col-md-3 img-top grid_box">
-													<a href="images/SOCI_SignIn_Page.png" class="swipebox"  title="Volunteer Coordination System">
-														<img src="images/SOCI_SignIn_Page.png" class="img-responsive" alt="">
-														<span class="zoom-icon"></span> 
-													</a>
-												</div>
-											<div class="clearfix"></div>	
-											</div>	 	        					 
-										</div>
-<!-- 										<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
-											
-											<div class="tab_img">
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/pic-2.jpg" class="swipebox"  title="Image Title">
-															  <img src="images/pic-2.jpg" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/pic-3.jpg" class="swipebox"  title="Image Title">
-															  <img src="images/pic-3.jpg" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/pic-4.jpg" class="swipebox"  title="Image Title">
-															  <img src="images/pic-4.jpg" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													
-														<div class="clearfix"></div>
-											</div>		        					 
-										</div>
-										<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-3">
-											<div class="tab_img">
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/pic-1.jpg" class="swipebox"  title="Image Title">
-															  <img src="images/pic-1.jpg" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/pic-2.jpg" class="swipebox"  title="Image Title">
-															  <img src="images/pic-2.jpg" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													
-														<div class="clearfix"></div>
-											</div>	
-										</div>
-										<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-4">
-											<div class="tab_img">
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/pic-1.jpg" class="swipebox"  title="Image Title">
-															  <img src="images/pic-1.jpg" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													
-														<div class="clearfix"></div>
-											</div>	
-										</div>										 -->
-									</div>	
-								</div>
-							</div>
-						</div>				
- 
-				<div class="arrow">
-					<a href="#services" class="scroll"><img src="images/arrow.png" alt=""/></a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- portfolio-section-ends -->
-	<div class="services-section" id="services">
-			<div class="container"> 
-			<div class="services-header">
-				<h3>services</h3>
-					<p>These are the list of services I provide.  </p>
-			</div>
-			<div class="services-sectiongrids">
-				<div class="col-md-4 services-grid">
-					<img src="images/img1.png" alt=""/>
-					<h4>webdesign</h4>
-					<p>I provide services for web designing, I have relevant experiences on web and mobile app designs on figma</p>
-				</div>
-				<div class="col-md-4 services-grid">
-					<img src="images/img2.png" alt=""/>
-					<h4>Custom Project</h4>
-					<p>I welcome custom projects you would like to be made and done.</p>
-				</div>
-				<div class="col-md-4 services-grid">
-					<img src="images/img3.png" alt=""/>
-					<h4>web development</h4>
-					<p>Web Development is my primary expertise and also have relevant experiences in this field.</p>
-				</div>
-				<div class="clearfix"></div>
-				<div class="arrow1">
-					<a href="#contact" class="scroll"><img src="images/arrow1.png" alt=""/></a>
-					</div>
-		</div>
-		</div>
-		</div>
-		<!-- services-section-ends -->
-	</div>
-	<div class="footer-section" id="contact" id="contact">
-			<div class="container"> 
-			<div class="contact-header">
-				<h3> contact</h3>
-					<p>Contact me on the following social media accounts, just click the icons.</p>
-			</div>
-			<div class="social-icon">
-				<a href="#"><i class="icon1"></i></a>
-				<a href="https://www.facebook.com/denden.dinaguit/"><i class="icon2"></i></a>
-				<a href="dedinaguit.student@asiancollege.edu.ph"><i class="icon3"></i></a>
-				<!-- <a href="#"><i class="icon4"></i></a> -->
-				
-			</div>
-			<div class="contact">
-				<form>
-					<div class="col-md-4 contactgrid">
-						<input type="text" class="text" value=" name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' name';}">
-					</div>
-					<div class="col-md-4 contactgrid">
-						<input type="text" class="text" value="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email';}">
-					</div>
-					<div class="col-md-4 contactgrid">
-						<input type="text" class="text" value="phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'phone';}">
-					</div>
-					<div class="col-md-8 contactgrid1">
-						<textarea onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
-					</div>
-					<div class="col-md-4 contactgrid2">
-						<input type="submit" value="[send message]">
-					</div>
-				   <div class="clearfix"></div>
-				</form>
-			</div>
-			<div class="footer-bottom">
+    <!-- Hero -->
+    <section
+      id="home"
+      class="d-flex align-items-center text-center text-white"
+      style="height: 80vh"
+    >
+      <div class="container">
+        <h1 class="display-3 fw-bold">Hello, I'm Danica</h1>
+        <p class="lead mb-4">
+          A passionate programmer crafting elegant, responsive experiences
+        </p>
+        <a href="#work" class="btn btn-primary btn-lg">Explore Projects</a>
+      </div>
+    </section>
 
-					<p>&copy; 2024 Danica Dinaguit . All rights  Reserved </p>
+    <!-- About -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">About Me</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-center mb-4 mb-lg-0">
+            <img
+              src="images/me.jpg"
+              alt="Danica Dinaguit"
+              class="rounded-circle img-fluid shadow"
+              style="max-width: 250px"
+            />
+          </div>
+          <div class="col-lg-8">
+            <p class="fs-5 mb-4">
+              I’m <strong>Danica E. Dinaguit</strong>, a
+              <strong>23-year-old</strong> Information Technology graduate from
+              Asian College (2021–2025), graduated <em>Magna Cum Laude</em> and
+              honored as an <em>IT Specialist</em> among my peers. Based in
+              Dumaguete City, Philippines, I’m passionate about crafting
+              responsive and user-friendly web applications through hands-on
+              experience and internships.
+            </p>
+            <div class="row">
+              <div class="col-sm-6">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <strong>Date of Birth:</strong> October 23, 2001
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Location:</strong> Tinaogan, Bindoy, Negros Oriental
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Email:</strong>
+                    <a href="mailto:dinaguit.danica@gmail.com"
+                      >dinaguit.danica@gmail.com</a
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Phone:</strong> +63 960 674 8406
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <strong>Internship:</strong> IT Support Intern, Infocom
+                    Technologies (Jan–Apr 2025)
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Education:</strong> BS Information Technology, Asian
+                    College (2021–2025)
+                  </li>
+                  <li class="list-group-item">
+                    <strong>SHS:</strong> Demetrio L. Alviola NHS (2018–2020)
+                  </li>
+                  <li class="list-group-item">
+                    <strong>High School:</strong> Demetrio L. Alviola NHS
+                    (2014–2018)
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="mt-4">
+              <h5>Technical Skills</h5>
+              <span class="badge bg-secondary me-2 mb-2">HTML</span>
+              <span class="badge bg-secondary me-2 mb-2">CSS</span>
+              <span class="badge bg-secondary me-2 mb-2">JavaScript</span>
+              <span class="badge bg-secondary me-2 mb-2">PHP</span>
+              <span class="badge bg-secondary me-2 mb-2">Laravel</span>
+              <span class="badge bg-secondary me-2 mb-2">Python</span>
+              <span class="badge bg-secondary me-2 mb-2">Figma</span>
+              <span class="badge bg-secondary me-2 mb-2">FlutterFlow</span>
+              <span class="badge bg-secondary me-2 mb-2">Git & GitHub</span>
+            </div>
+            <div class="mt-3">
+              <h5>Personal Attributes</h5>
+              <ul>
+                <li>Perseverant, Honest, Hardworking</li>
+                <li>Strong Time Management & Multitasking</li>
+                <li>Passionate, Determined, Reliable</li>
+                <li>Excellent Oral & Written Communication</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-					</div>
-					<script type="text/javascript">
-						$(document).ready(function() {
-							/*
-							var defaults = {
-					  			containerID: 'toTop', // fading element id
-								containerHoverID: 'toTopHover', // fading element hover id
-								scrollSpeed: 1200,
-								easingType: 'linear' 
-					 		};
-							*/
-							
-							$().UItoTop({ easingType: 'easeOutQuart' });
-							
-						});
-					</script>
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-</div>
+    <!-- Work Section -->
+    <section id="work" class="works-section py-5">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="works-header text-center mb-5">
+          <h3>Works & Projects</h3>
+          <p>A showcase of my academic and professional projects</p>
+        </div>
 
-		</div>		
-	</div>
-	
-	
-</body>
+        <!-- Project Cards Grid -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <!-- Kofinos Landing Page -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="images/kofinos-landing.png"
+                class="card-img-top"
+                alt="Kofinos Landing"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5
+                  class="card-title text-uppercase"
+                  style="
+                    font-family: 'Arvo', serif;
+                    color: #ef664d;
+                    font-size: 1.3em;
+                  "
+                >
+                  3rd Year Project
+                </h5>
+                <h6
+                  class="card-subtitle mb-2 text-muted"
+                  style="font-size: 1em"
+                >
+                  Kofinos Landing Page
+                </h6>
+                <p
+                  class="card-text flex-grow-1"
+                  style="font-size: 15px; color: #2a404e"
+                >
+                  Responsive landing page built with FlutterFlow, featuring
+                  dynamic content and mobile-first design.
+                </p>
+                <a
+                  href="https://kofinos-z34oof.flutterflow.app/home"
+                  target="_blank"
+                  class="btn btn-sm btn-outline-dark mt-auto text-uppercase"
+                  >View Live</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Kofinos Mobile Menu -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="images/kofinos-mobile-menu.png"
+                class="card-img-top"
+                alt="Kofinos Mobile Menu"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5
+                  class="card-title text-uppercase"
+                  style="
+                    font-family: 'Arvo', serif;
+                    color: #ef664d;
+                    font-size: 1.3em;
+                  "
+                >
+                  Mobile Menu App
+                </h5>
+                <h6
+                  class="card-subtitle mb-2 text-muted"
+                  style="font-size: 1em"
+                >
+                  Phone-Only Experience
+                </h6>
+                <p
+                  class="card-text flex-grow-1"
+                  style="font-size: 15px; color: #2a404e"
+                >
+                  Phone-only menu application for Kofinos, built on FlutterFlow
+                  with intuitive navigation.
+                </p>
+                <a
+                  href="https://kofinos-mobile-menu-nudfww.flutterflow.app/"
+                  target="_blank"
+                  class="btn btn-sm btn-outline-dark mt-auto text-uppercase"
+                  >Try on Phone</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Volunteer Coordination System -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="images/Volunteer_Coordination_LandingPage.png"
+                class="card-img-top"
+                alt="Volunteer Coordination"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5
+                  class="card-title text-uppercase"
+                  style="
+                    font-family: 'Arvo', serif;
+                    color: #ef664d;
+                    font-size: 1.3em;
+                  "
+                >
+                  4th Year Thesis
+                </h5>
+                <h6
+                  class="card-subtitle mb-2 text-muted"
+                  style="font-size: 1em"
+                >
+                  Volunteer Coordination System
+                </h6>
+                <p
+                  class="card-text flex-grow-1"
+                  style="font-size: 15px; color: #2a404e"
+                >
+                  Volunteer Coordination System for Asian College SOCI
+                  Department for Guest/General audience views.
+                </p>
+                <a
+                  href="https://acsoci.me"
+                  target="_blank"
+                  class="btn btn-sm btn-outline-dark mt-auto text-uppercase"
+                  >Explore System</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section id="confidential-views" class="py-5 bg-dark text-white">
+          <div class="container">
+            <!-- Section Title -->
+            <h4
+              class="text-center mb-4 text-uppercase"
+              style="
+                font-family: 'Arvo', serif;
+                color: #fefefe;
+                font-size: 1.5rem;
+              "
+            >
+              Confidential Link Interface Samples – Volunteer View
+            </h4>
+
+            <div class="row g-4">
+              <!-- Volunteer Profile -->
+              <div class="col-md-4">
+                <div class="card bg-secondary text-white border-0 card-custom">
+                  <img
+                    src="images/Volunteer Profile(used).png"
+                    class="card-img-top"
+                    alt="Volunteer Profile"
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Volunteer Profile – manage personal info
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Profile Edit State -->
+              <div class="col-md-4">
+                <div class="card bg-secondary text-white border-0 card-custom">
+                  <img
+                    src="images/Volunteer Profile EditState(used).png"
+                    class="card-img-top"
+                    alt="Profile Edit State"
+                  />
+                  <div class="card-body">
+                    <p class="card-text">Profile Edit State – update details</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Notifications -->
+              <div class="col-md-4">
+                <div class="card bg-secondary text-white border-0 card-custom">
+                  <img
+                    src="images/Volunteer Notification(used).png"
+                    class="card-img-top"
+                    alt="Volunteer Notification"
+                  />
+                  <div class="card-body">
+                    <p class="card-text">Notifications – system alerts</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event Details (before join) -->
+              <div class="col-md-4">
+                <div class="card bg-secondary text-white border-0 card-custom">
+                  <img
+                    src="images/Volunteer Event Details Page(used).png"
+                    class="card-img-top"
+                    alt="Event Details"
+                  />
+                  <div class="card-body">
+                    <p class="card-text">Event Details – before joining</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event Details (after join) -->
+              <div class="col-md-4">
+                <div class="card bg-secondary text-white border-0 card-custom">
+                  <img
+                    src="images/Volunteer Event Details Page Joined the event(used).png"
+                    class="card-img-top"
+                    alt="Joined Event Details"
+                  />
+                  <div class="card-body">
+                    <p class="card-text">Event Details – after joining</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- QR Downloaded -->
+              <div class="col-md-4">
+                <div class="card bg-secondary text-white border-0 card-custom">
+                  <img
+                    src="images/Volunteer Qr downloaded.png"
+                    class="card-img-top"
+                    alt="QR Downloaded"
+                  />
+                  <div class="card-body">
+                    <p class="card-text">QR Download – proof of attendance</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Regenerate Success Prompt -->
+              <div class="col-md-4">
+                <div class="card bg-secondary text-white border-0 card-custom">
+                  <img
+                    src="images/Volunteer Regenerate Successful prompt.png"
+                    class="card-img-top"
+                    alt="Regeneration Successful"
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      QR Regeneration – success confirmation
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="container">
+            <!-- Section Title -->
+            <h4
+              class="text-center mb-4 text-uppercase"
+              style="
+                font-family: 'Arvo', serif;
+                color: #fefefe;
+                font-size: 1.5rem;
+              "
+            >
+              Admin View
+            </h4>
+
+            <div class="row g-4">
+              <!-- Event Calendar -->
+              <div class="col-md-4">
+                <div class="card bg-secondary text-white border-0 card-custom">
+                  <img
+                    src="images/Admin Calendar Month.png"
+                    class="card-img-top"
+                    alt="Admin Calendar"
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Admin Calendar – plot and update events
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event Dashboard -->
+              <div class="col-md-4">
+                <div class="card bg-secondary text-white border-0 card-custom">
+                  <img
+                    src="images/Admin Event Dashboard.png"
+                    class="card-img-top"
+                    alt="Admin Event Dashboard"
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Admin Event Dashboard – manage event
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Qr Scanner for Attendance -->
+              <div class="col-md-4">
+                <div class="card bg-secondary text-white border-0 card-custom">
+                  <img
+                    src="images/Admin Qr Scan and Success Notif(used).png"
+                    class="card-img-top"
+                    alt="Qr Scanner for Attendance"
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Admin Attendance Qr Scan – attendance tracking
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Downloaded Event Attendance Form -->
+              <div class="col-md-4">
+                <div class="card bg-secondary text-white border-0 card-custom">
+                  <img
+                    src="images/Admin Event Attendance Form Downloaded.png"
+                    class="card-img-top"
+                    alt="Downloaded Event Attendance Form"
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Downloaded Event Attendance Form – report generation
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Approve/Reject Applicants -->
+              <div class="col-md-4">
+                <div class="card bg-secondary text-white border-0 card-custom">
+                  <img
+                    src="images/Admin Pending Applicants ApproveReject.png"
+                    class="card-img-top"
+                    alt="Approve/Reject Applicants"
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Admin View Applications – Approve/Reject Applicants
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- View Event Participant -->
+              <div class="col-md-4">
+                <div class="card bg-secondary text-white border-0 card-custom">
+                  <img
+                    src="images/Admin View Event Participant.png"
+                    class="card-img-top"
+                    alt="View Event Participant"
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Admin View Event Participant – view volunteer participants
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- View Attendance Summary -->
+              <div class="col-md-4">
+                <div class="card bg-secondary text-white border-0 card-custom">
+                  <img
+                    src="images/Admin View Attendance Summary(used).png"
+                    class="card-img-top"
+                    alt="View Attendance Summary"
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Evvent Attendance Summary – attendance report
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Styles to align with template stock CSS -->
+    <style>
+      /* Cards on dark background */
+      .works-section .card {
+        background: #fff;
+      }
+      /* Card titles match accent color and font */
+      .works-section .card-title {
+        margin-bottom: 0.5rem;
+      }
+      /* Card subtitles muted */
+      .works-section .card-subtitle {
+        color: #7e7e7e !important;
+      }
+      /* Ensure section paragraphs inherit white where needed */
+      .works-header p {
+        color: #fefefe;
+      }
+    </style>
+
+    <!-- Tailwind / Bootstrap CSS additions -->
+    <style>
+      .section-title {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+      .section-subtitle {
+        font-size: 1rem;
+        color: #666;
+      }
+      .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+    </style>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container text-center">
+        <h2 class="section-title text-dark">Services</h2>
+        <div class="row g-4 mt-4">
+          <div class="col-md-4">
+            <div class="card card-custom border-0 shadow">
+              <div class="card-body">
+                <div class="mb-3">
+                  <i class="bi bi-palette service-icon"></i>
+                </div>
+                <h5 class="card-title">Web Design</h5>
+                <p>
+                  Figma UI/UX design for web and mobile with a focus on user
+                  experience.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-custom border-0 shadow">
+              <div class="card-body">
+                <div class="mb-3"><i class="bi bi-code service-icon"></i></div>
+                <h5 class="card-title">Web Development</h5>
+                <p>
+                  Full-stack solutions using Laravel, React, and modern JS
+                  frameworks.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-custom border-0 shadow">
+              <div class="card-body">
+                <div class="mb-3"><i class="bi bi-gear service-icon"></i></div>
+                <h5 class="card-title">Custom Projects</h5>
+                <p>
+                  Tailored web applications to meet your unique business needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <p class="mb-1">&copy; 2024 Danica Dinaguit</p>
+        <p>
+          <a href="https://www.facebook.com/denden.dinaguit/"
+            ><i class="icon2"></i
+          ></a>
+          <a href="https://github.com/DanicaDinaguit"
+            ><i class="bi bi-github ms-3"></i
+          ></a>
+          <a href="#"><i class="bi bi-envelope ms-3"></i></a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap & Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.js"></script>
+  </body>
 </html>
